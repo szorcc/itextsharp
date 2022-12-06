@@ -16,6 +16,8 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,12 +64,11 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\BouncyCastle.NetCore.1.9.0\lib\net20\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>$(SolutionDir)\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="nunit.framework, Version=2.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.2.7.1\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Security" />
@@ -98,7 +99,7 @@
     <Compile Include="iTextSharp\text\pdf\BarcodeDatamatrixTest.cs" />
     <Compile Include="iTextSharp\text\pdf\BookmarksTest.cs" />
     <Compile Include="iTextSharp\text\pdf\CompressionTest.cs" />
-	<Compile Include="iTextSharp\text\pdf\DefaultSplitCharacterProfilingTest.cs" />
+    <Compile Include="iTextSharp\text\pdf\DefaultSplitCharacterProfilingTest.cs" />
     <Compile Include="iTextSharp\text\pdf\FreeTextFlatteningTest.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfDictionaryTest.cs" />
     <Compile Include="iTextSharp\text\pdf\PdfEncryptionTest.cs" />
@@ -192,7 +193,7 @@
     <Content Include="resources\testutils\CompareToolTest\simple_pdf.pdf" />
     <Content Include="resources\testutils\CompareToolTest\tagged_pdf.pdf" />
     <Content Include="resources\testutils\CompareToolTest\TestPdf.pdf" />
-	<Content Include="resources\text\pdf\DefaultSplitCharacterProfilingTest\profilingText.txt" />
+    <Content Include="resources\text\pdf\DefaultSplitCharacterProfilingTest\profilingText.txt" />
     <Content Include="resources\text\xmp\impl\xxe-data.txt" />
     <Content Include="resources\text\ChunkTest\logo.gif" />
     <Content Include="resources\text\pdf\AcroFieldsTest\barcode.jpg" />
